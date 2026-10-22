@@ -45,7 +45,9 @@ In this step, I configured AWS access keys so that my EC2 instance could authent
 
 ## Architecture set up
 
-I created a VPC with one public subnet and an Internet Gateway in a single Availability Zone. I also launched an EC2 instance in the VPC to prepare for interacting with Amazon S3. The EC2 instance used the AWS CLI to communicate with Amazon S3. Because I did not configure an S3 VPC endpoint in this project, the instance accessed S3 through the service's public endpoint using its available network connectivity.
+I created a VPC with one public subnet and an Internet Gateway in a single Availability Zone. I also launched an EC2 instance in the VPC to prepare for interacting with Amazon S3. 
+
+The EC2 instance used the AWS CLI to communicate with Amazon S3. Because I did not configure an S3 VPC endpoint in this project, the instance accessed S3 through the service's public endpoint using its available network connectivity.
 
 I uploaded two JPEG image files to my Amazon S3 bucket so that I could practise accessing and listing the stored objects from my EC2 instance using the AWS CLI.
 
